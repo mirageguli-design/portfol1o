@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateApp - Инновационное решение</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">InnovateApp</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#features" class="nav-link">Возможности</a></li>
+                    <li><a href="#how-it-works" class="nav-link">Как это работает</a></li>
+                    <li><a href="#pricing" class="nav-link">Цены</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#contact" class="btn btn-outline">Войти</a>
+                    <a href="#contact" class="btn btn-primary">Начать</a>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particlesCanvas"></canvas>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Революционизируйте</span> ваш бизнес
+                    </h1>
+                    <p class="hero-subtitle">Инновационная платформа, которая поможет вам достичь новых высот</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Начать бесплатно</a>
+                        <a href="#features" class="btn btn-outline btn-large">Узнать больше</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10000">0</div>
+                            <div class="stat-label">Пользователей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Компаний</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-label">% Удовлетворенности</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Проблема, которую мы решаем</h2>
+                <p class="section-text">Многие компании сталкиваются с трудностями в управлении процессами, координации команд и аналитике данных. Мы предлагаем комплексное решение.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <p class="section-subtitle">Мощные инструменты для вашего успеха</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Молниеносная скорость</h3>
+                    <p>Обрабатывайте данные в реальном времени с невероятной скоростью</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Безопасность</h3>
+                    <p>Ваши данные защищены с помощью передовых технологий шифрования</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Аналитика</h3>
+                    <p>Получайте глубокую аналитику и инсайты для принятия решений</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Командная работа</h3>
+                    <p>Эффективная координация команды в одном месте</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Мобильность</h3>
+                    <p>Работайте откуда угодно на любом устройстве</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Интеграции</h3>
+                    <p>Легкая интеграция с популярными сервисами и инструментами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Как это работает</h2>
+                <p class="section-subtitle">Простой процесс в три шага</p>
+            </div>
+            <div class="steps">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <h3>Регистрация</h3>
+                    <p>Создайте аккаунт за минуту. Никаких сложных настроек.</p>
+                </div>
+                <div class="step" data-aos="fade-up">
+                    <div class="step-number">02</div>
+                    <h3>Настройка</h3>
+                    <p>Настройте платформу под свои нужды с помощью интуитивного интерфейса.</p>
+                </div>
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">03</div>
+                    <h3>Использование</h3>
+                    <p>Начните использовать все возможности платформы для роста вашего бизнеса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Отзывы клиентов</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"InnovateApp полностью изменил способ работы нашей команды. Производительность выросла на 300%!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Алексей Петров</h4>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Выберите план</h2>
+                <p class="section-subtitle">Гибкие тарифы для любого бизнеса</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Стартовый</h3>
+                    <div class="price">
+                        <span class="currency">₽</span>
+                        <span class="amount">0</span>
+                        <span class="period">/месяц</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> До 5 пользователей</li>
+                        <li><i class="fas fa-check"></i> Базовые функции</li>
+                        <li><i class="fas fa-check"></i> Поддержка по email</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Начать</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Популярный</div>
+                    <h3>Профессиональный</h3>
+                    <div class="price">
+                        <span class="currency">₽</span>
+                        <span class="amount">2999</span>
+                        <span class="period">/месяц</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> До 50 пользователей</li>
+                        <li><i class="fas fa-check"></i> Все функции</li>
+                        <li><i class="fas fa-check"></i> Приоритетная поддержка</li>
+                        <li><i class="fas fa-check"></i> Расширенная аналитика</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Начать</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Корпоративный</h3>
+                    <div class="price">
+                        <span class="currency">₽</span>
+                        <span class="amount">9999</span>
+                        <span class="period">/месяц</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Неограниченно пользователей</li>
+                        <li><i class="fas fa-check"></i> Все функции + кастомные</li>
+                        <li><i class="fas fa-check"></i> Персональный менеджер</li>
+                        <li><i class="fas fa-check"></i> Интеграции на заказ</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как быстро я могу начать?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вы можете начать использовать платформу сразу после регистрации. Настройка займет всего несколько минут.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли изменить план позже?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете изменить или отменить свой план в любое время без дополнительных комиссий.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли бесплатная пробная версия?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем 14-дневную бесплатную пробную версию всех платных планов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Начните прямо сейчас</h2>
+                <p class="section-subtitle">Присоединяйтесь к тысячам довольных клиентов</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <input type="text" placeholder="Название компании">
+                <textarea placeholder="Сообщение" rows="5"></textarea>
+                <button type="submit" class="btn btn-primary btn-large">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InnovateApp</h3>
+                    <p>Революционизируйте ваш бизнес</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукт</h4>
+                    <ul>
+                        <li><a href="#features">Возможности</a></li>
+                        <li><a href="#pricing">Цены</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InnovateApp. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista - Ресторан премиум-класса</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">Bella Vista</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#menu" class="nav-link">Меню</a></li>
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#reservation" class="nav-link">Бронирование</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1 class="hero-title">Добро пожаловать в Bella Vista</h1>
+                    <p class="hero-subtitle">Изысканная кухня и неповторимая атмосфера</p>
+                    <a href="#reservation" class="btn btn-primary">Забронировать стол</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">О ресторане</h2>
+                    <p class="intro">Bella Vista - это место, где встречаются традиции и инновации в кулинарном искусстве.</p>
+                    <p>Наш шеф-повар с многолетним опытом создает уникальные блюда, сочетающие классические рецепты с современными техниками приготовления. Мы используем только свежие, отборные ингредиенты от проверенных поставщиков.</p>
+                    <p>Атмосфера нашего ресторана создана для того, чтобы вы могли насладиться не только едой, но и приятным времяпрепровождением в уютной обстановке.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Мишленовская кухня</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wine-glass"></i>
+                            <h4>Винная карта</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h4>Живая музыка</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наше меню</h2>
+                <p class="section-subtitle">Изысканные блюда на любой вкус</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="appetizers">Закуски</button>
+                <button class="tab-btn" data-tab="main">Основные блюда</button>
+                <button class="tab-btn" data-tab="desserts">Десерты</button>
+                <button class="tab-btn" data-tab="drinks">Напитки</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="appetizers">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Тартар из тунца</h3>
+                            <p>Свежий тунец, авокадо, кунжут, соус васаби</p>
+                        </div>
+                        <div class="item-price">1 200 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Брускетта с моцареллой</h3>
+                            <p>Хрустящий хлеб, моцарелла, томаты, базилик</p>
+                        </div>
+                        <div class="item-price">890 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Устрицы</h3>
+                            <p>Свежие устрицы, лимон, табаско</p>
+                        </div>
+                        <div class="item-price">1 500 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="main">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Стейк из мраморной говядины</h3>
+                            <p>Премиум мраморная говядина, овощи гриль, соус</p>
+                        </div>
+                        <div class="item-price">2 500 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Лосось на пару</h3>
+                            <p>Филе лосося, овощи, соус из белого вина</p>
+                        </div>
+                        <div class="item-price">1 800 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Паста карбонара</h3>
+                            <p>Спагетти, бекон, пармезан, яйцо</p>
+                        </div>
+                        <div class="item-price">1 100 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Тирамису</h3>
+                            <p>Классический итальянский десерт</p>
+                        </div>
+                        <div class="item-price">650 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Шоколадный фондан</h3>
+                            <p>Теплый шоколадный торт, ванильное мороженое</p>
+                        </div>
+                        <div class="item-price">750 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Чизкейк</h3>
+                            <p>Нежный чизкейк, ягодный соус</p>
+                        </div>
+                        <div class="item-price">680 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="drinks">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Красное вино</h3>
+                            <p>Отборные вина из Франции и Италии</p>
+                        </div>
+                        <div class="item-price">от 1 200 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Коктейли</h3>
+                            <p>Авторские коктейли от нашего бармена</p>
+                        </div>
+                        <div class="item-price">от 450 ₽</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Кофе и чай</h3>
+                            <p>Премиум кофе и элитные сорта чая</p>
+                        </div>
+                        <div class="item-price">от 250 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Галерея</h2>
+                <p class="section-subtitle">Погрузитесь в атмосферу нашего ресторана</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Забронировать стол</h2>
+                <p class="section-subtitle">Зарезервируйте место для особенного вечера</p>
+            </div>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Имя</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Дата</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Время</label>
+                        <input type="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Количество гостей</label>
+                        <select required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Особые пожелания</label>
+                    <textarea rows="4" placeholder="Укажите особые пожелания..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Забронировать</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Контакты</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>г. Москва, ул. Ресторанная, д. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@bellavista.ru</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Часы работы</h4>
+                            <p>Пн-Вс: 12:00 - 00:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Карта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Ресторан премиум-класса с изысканной кухней</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#reservation">Бронирование</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Vista. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

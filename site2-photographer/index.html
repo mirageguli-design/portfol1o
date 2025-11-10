@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Photography - Портфолио фотографа</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">Elena Photography</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\"><rect fill=\"%23333\" width=\"1920\" height=\"1080\"/></svg>') center/cover;">
+                <div class="slide-content">
+                    <h1 class="slide-title">Запечатлеваю моменты</h1>
+                    <p class="slide-subtitle">Профессиональная фотография для ваших особенных событий</p>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\"><rect fill=\"%23444\" width=\"1920\" height=\"1080\"/></svg>') center/cover;">
+                <div class="slide-content">
+                    <h1 class="slide-title">Искусство в каждом кадре</h1>
+                    <p class="slide-subtitle">Создаю истории через объектив</p>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\"><rect fill=\"%23555\" width=\"1920\" height=\"1080\"/></svg>') center/cover;">
+                <div class="slide-content">
+                    <h1 class="slide-title">Эмоции и красота</h1>
+                    <p class="slide-subtitle">Фотография - это способ остановить время</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Мои работы</h2>
+                <p class="section-subtitle">Выберите категорию для просмотра</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="wedding">Свадьбы</button>
+                <button class="filter-btn" data-filter="portrait">Портреты</button>
+                <button class="filter-btn" data-filter="nature">Природа</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Свадебная фотосессия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Портретная съемка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Природный пейзаж</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Fashion съемка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Свадебная церемония</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Семейный портрет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Горный пейзаж</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Стилизованная съемка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Love Story</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">О фотографе</h2>
+                    <p class="intro-text">Привет! Я Елена - профессиональный фотограф с более чем 10-летним опытом работы.</p>
+                    <p>Моя страсть к фотографии началась еще в детстве, когда я впервые взяла в руки камеру. С тех пор я посвятила свою жизнь тому, чтобы запечатлевать самые важные моменты жизни людей.</p>
+                    <p>Я специализируюсь на свадебной, портретной и fashion фотографии. Каждый проект для меня - это возможность создать что-то уникальное и незабываемое.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Фотосессий</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Довольных клиентов</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Услуги и цены</h2>
+                <p class="section-subtitle">Выберите пакет, который подходит вам</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Базовый</h3>
+                    <div class="price">от 15 000 ₽</div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> 2 часа съемки</li>
+                        <li><i class="fas fa-check"></i> 50 обработанных фото</li>
+                        <li><i class="fas fa-check"></i> Цифровая галерея</li>
+                        <li><i class="fas fa-check"></i> Срок обработки: 2 недели</li>
+                    </ul>
+                    <a href="#contact" class="btn">Заказать</a>
+                </div>
+                <div class="service-card featured">
+                    <div class="badge">Популярный</div>
+                    <h3>Стандарт</h3>
+                    <div class="price">от 30 000 ₽</div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> 4 часа съемки</li>
+                        <li><i class="fas fa-check"></i> 100 обработанных фото</li>
+                        <li><i class="fas fa-check"></i> Цифровая галерея</li>
+                        <li><i class="fas fa-check"></i> 10 фото в печати</li>
+                        <li><i class="fas fa-check"></i> Срок обработки: 1 неделя</li>
+                    </ul>
+                    <a href="#contact" class="btn">Заказать</a>
+                </div>
+                <div class="service-card">
+                    <h3>Премиум</h3>
+                    <div class="price">от 50 000 ₽</div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> 6+ часов съемки</li>
+                        <li><i class="fas fa-check"></i> 200+ обработанных фото</li>
+                        <li><i class="fas fa-check"></i> Цифровая галерея</li>
+                        <li><i class="fas fa-check"></i> Фотоальбом премиум</li>
+                        <li><i class="fas fa-check"></i> Приоритетная обработка</li>
+                        <li><i class="fas fa-check"></i> Срок обработки: 5 дней</li>
+                    </ul>
+                    <a href="#contact" class="btn">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Свяжитесь со мной</h2>
+                <p class="section-subtitle">Готовы обсудить ваш проект?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>elena@photography.ru</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>г. Москва, ул. Фотографическая, д. 1</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Выберите услугу</option>
+                            <option value="basic">Базовый пакет</option>
+                            <option value="standard">Стандартный пакет</option>
+                            <option value="premium">Премиум пакет</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Elena Photography. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
